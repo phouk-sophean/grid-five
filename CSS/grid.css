@@ -1,0 +1,72 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+body {
+    padding-top: 25px;
+    background: rgb(219, 250, 135);
+}
+.container {
+    width: 70%;
+    height: 90vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-template-areas:
+    "aside navbar contentone"
+    "contenttwo navbar footer"
+}
+nav {
+    background: url(https://cdn.pixabay.com/photo/2024/04/09/01/45/ai-generated-8684830_1280.png);
+    background-position: center;
+    background-size: cover;
+    grid-area: navbar;
+}
+aside {
+    background: rgb(213, 225, 213);
+    grid-area: aside;
+    text-align: center;
+    align-content: center;
+    box-shadow: 0px 3px 8px rgb(32, 31, 31);
+}
+aside button {
+    padding: 10px 25px;
+    border: none;
+    background: orange;
+    color: white;
+    border-radius: 20px;
+}
+h1, p, nbutto {
+    padding: 10px 0 10px 0;
+}
+.contentone {
+    background: url(https://cdn.pixabay.com/photo/2022/08/29/17/45/burger-7419428_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: contentone;
+}
+.contenttwo {
+    background: url(../img/CHATGPTIMG.webp);
+    background-position: center;
+    background-size: cover;
+    grid-area: contenttwo;
+}
+footer {
+    background: rgb(213, 225, 213);
+    grid-area: footer;
+    text-align: center;
+    align-content: center;
+    box-shadow: 0px 3px 8px rgb(32, 31, 31);
+}
+footer button {
+    padding: 10px 25px;
+    border: none;
+    background: teal;
+    color: white;
+    border-radius: 20px
+}
+footer h1 {
+    font-size: 28px;
+}
